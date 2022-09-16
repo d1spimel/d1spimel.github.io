@@ -548,6 +548,7 @@ ul
 }
 
 .footer {
+    margin-top: 100px;
     display: flex;
     position: relative;
 }
@@ -679,6 +680,112 @@ border-color: rgba(18, 18, 18, 0.4);
     font-size: 16px;
     line-height: 160%;
     color: rgba(18, 18, 18, 0.6);
+}
+.popup
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup:target
+{
+    opacity: 1;
+    visibility: visible;
+}
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px 30px 10px;
+}
+.popup__content {
+    background-color: #EEEEEE;
+    color: #121212;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+}
+.popup__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #121212;
+    text-decoration: none;
+}
+.popup__title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.label
+{
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+.name{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: border 0.3s;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    outline: none;  
+}
+.name:focus {
+    border: 3px solid #555;
+}
+.message
+{
+    font-size: 18px;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    transition: border 0.3s;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    outline: none;  
+}
+.message:focus {
+    border: 3px solid #555;
+}
+.button
+{
+    margin: 0;
+    transition: transform 0.4s;
+    text-align: center;
+    margin-top: 25px;
+}
+.button a
+{
+    max-width: 192px;
+    height: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #FF6428;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+.button:hover
+{
+    transform: scale(1.05);
+}
+.button a:hover
+{
+    background: #fe8b5e;
 }
 /* =====PC===== */
 @media (max-width: 1087px)
