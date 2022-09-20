@@ -21,7 +21,9 @@ let score_player_element = document.getElementById("score_player");
 
     function generate(){
         attempts++;
-        attempts_element.innerHTML = "Attempt " + (attempts) + " of 3";
+        if (attempts <=3){
+            attempts_element.innerHTML = "Attempt " + (attempts) + " of 3";
+        }
         let card_user = getRandomInt(36);
         let card_computer = getRandomInt(36);
         card_player_element.src = "img/" + card_user + ".png";
@@ -61,6 +63,10 @@ let score_player_element = document.getElementById("score_player");
             {
                 alert(username + ", its draw!")
             }
+
+        }
+        if (attempts == 4)
+        {
             attempts = 0;
             score_computer = 0;
             score_user = 0;
