@@ -24,8 +24,8 @@ let score_player_element = document.getElementById("score_player");
         if (attempts <=3){
             attempts_element.innerHTML = "Attempt " + (attempts) + " of 3";
         }
-        let card_user = getRandomInt(36);
-        let card_computer = getRandomInt(36);
+        let card_user = getRandomInt(35)+1;
+        let card_computer = getRandomInt(35)+1;
         card_player_element.src = "img/" + card_user + ".png";
         card_computer_element.src = "img/" + card_computer + ".png";
 
