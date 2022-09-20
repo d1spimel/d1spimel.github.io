@@ -1,10 +1,14 @@
+
+    let score_player = 0;
+    let score_computer = 0;
+    let ball_player_element = document.getElementById("ball_player");
+    let score_player_element = document.getElementById("score_player");
+    let score_computer_element = document.getElementById("score_computer");
+    let ball_computer_element = document.getElementById("ball_computer");
     function getRandomInt(max)
     {
         return Math.floor(Math.random() * max);
     }
-    let score_player = 0;
-    let score_computer = 0;
-
     let name = prompt("Enter your name: ");
     if (name == "" || name == null)
     {
@@ -12,14 +16,11 @@
     }
     let name_element = document.getElementById("name");
     name_element.innerHTML = name;
-    let new_game = 0;
+    let newGame = 0;
     function generate()
     {
-        let ball_player_element = document.getElementById("ball_player");
-        let score_player_element = document.getElementById("score_player");
-        let score_computer_element = document.getElementById("score_computer");
-        let ball_computer_element = document.getElementById("ball_computer");
-
+        if (newGame == 0)
+        {
         let ball_player = getRandomInt(7);
         ball_player_element.innerHTML = ball_player;
         let ball_computer = getRandomInt(7);
@@ -34,19 +35,25 @@
             score_computer++;
             score_computer_element.innerHTML = score_computer;
         }
+
+        if (score_player == 3 || score_computer == 3)
+        {
+            newGame = 1;
+        }
         if (score_player == 3)
         {
             alert(`${name}, you win!`);
-            new_game = 20;
         }
         else if (score_computer == 3)
         {
             alert(`${name}, you lose!`);
-            new_game = 20;
         }
-        new_game++;
-        if (new_game == 21 || score_computer == 21)
+        console.log(newGame);
+        }
+        else if(newGame == 1)
         {
+
+            newGame = 0;
             score_player = 0;
             score_player_element.innerHTML = score_player;
             ball_player_element.innerHTML = "&nbsp;";
@@ -54,4 +61,4 @@
             score_computer_element.innerHTML = score_computer;
             ball_computer_element.innerHTML = "&nbsp;";
         }
-    }
+}
