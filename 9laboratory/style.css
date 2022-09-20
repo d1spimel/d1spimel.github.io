@@ -1,0 +1,88 @@
+body
+{
+    background-color: #0b6238;
+    color: white;
+}
+.wrapper {
+    margin-top: 200px;
+    width: 500px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Trebuchet MS';
+}
+.section__main {
+    font-weight: bold;
+    height: 100%;
+}
+.score__block {
+    width: 100px;
+}
+.name{
+    text-align: center;
+    font-size: 24px;
+    white-space: nowrap;
+}
+.score {
+
+    margin-top: 10px;
+    background-color: #00bbff;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.card{
+    margin-top: 20px;
+}
+.section__center
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    height: 100%;
+}
+.attempts__section
+{
+    padding-top: 15px;
+}
+.section__generate {
+    margin-top: 7%;
+    background-color: greenyellow;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.generate {
+    padding: 10px;
+}
+.generate a
+{
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+@media (max-width: 600px)
+{
+    .wrapper{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    .section__center
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .section__main
+    {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
