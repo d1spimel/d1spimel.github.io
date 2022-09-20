@@ -49,7 +49,7 @@ let score_player_element = document.getElementById("score_player");
             score_player_element.innerHTML = score_user;
             score_computer_element.innerHTML = score_computer;
         }
-        else (attempts == 4)
+        else if(attempts == 4)
         {
             if (score_user > score_computer)
             {
