@@ -37,15 +37,15 @@
         if (score_player == 3)
         {
             alert(`${name}, you win!`);
-            new_game = 1;
+            new_game = 20;
         }
         else if (score_computer == 3)
         {
             alert(`${name}, you lose!`);
-            new_game = 1;
+            new_game = 20;
         }
         new_game++;
-        if (new_game == 2 || score_computer == 2)
+        if (new_game == 21 || score_computer == 21)
         {
             score_player = 0;
             score_player_element.innerHTML = score_player;
