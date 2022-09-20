@@ -35,24 +35,21 @@
             score_computer++;
             score_computer_element.innerHTML = score_computer;
         }
-
         if (score_player == 3 || score_computer == 3)
         {
             newGame = 1;
         }
-        if (score_player == 3)
-        {
-            alert(`${name}, you win!`);
-        }
-        else if (score_computer == 3)
-        {
-            alert(`${name}, you lose!`);
-        }
-        console.log(newGame);
         }
         else if(newGame == 1)
         {
-
+            if (score_player == 3)
+            {
+                alert(`${name}, you win!`);
+            }
+            else if (score_computer == 3)
+            {
+                alert(`${name}, you lose!`);
+            }
             newGame = 0;
             score_player = 0;
             score_player_element.innerHTML = score_player;
@@ -61,4 +58,4 @@
             score_computer_element.innerHTML = score_computer;
             ball_computer_element.innerHTML = "&nbsp;";
         }
-}
+    }
