@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="section__main">
+        <div class="score__block">
+          <div class="name__player">
+            <p id="name">Player</p>
+          </div>
+          <div class="score">
+            <p id="score_player">0</p>
+          </div>
+        </div>
+        <div class="ball">
+          <p id="ball_player">&nbsp;</p>
+        </div>
+      </div>
+      <div class="section__generate">
+        <div class="generate">
+          <a id="generate" href="#" onclick="generate();">Generate</a>
+        </div>
+      </div>
+      <div class="section__main">
+        <div class="score__block">
+          <div class="name__player">Computer</div>
+          <div class="score">
+            <p id="score_computer">0</p>
+          </div>
+        </div>
+        <div class="ball">
+          <p id="ball_computer">&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
