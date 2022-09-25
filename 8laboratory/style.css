@@ -51,9 +51,7 @@
   margin-right: 10%;
 }
 .generate {
-  display: flex;
   padding: 20px;
-  width: 100%;
 }
 .generate a {
   color: black;
