@@ -1,7 +1,7 @@
 .wrapper {
   margin-top: 200px;
   display: flex;
-  width: 460px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
   height: 185px;
@@ -45,13 +45,15 @@
   text-align: center;
   margin-top: 15%;
   background-color: greenyellow;
-  height: 35%;
   border-radius: 10px;
-  margin-left: 10%;
-  margin-right: 10%;
+	height: 40px;
+	width: 150px;
+	margin-left: 10%;
+	margin-right: 10%;
+	line-height: 2.5em;
 }
 .generate {
-  padding: 20px;
+  width: 100%;
 }
 .generate a {
   color: black;
@@ -66,6 +68,7 @@
     width: 50%;
     margin-top: 0px;
     height: 100%;
+		align-items: center;
   }
   .section__generate {
     margin-top: 50px;
@@ -80,14 +83,5 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media (max-width: 350px) {
-  .generate {
-    padding: 10px;
-    height: 24px;
-  }
-  .generate a {
-    font-size: 20px;
   }
 }
