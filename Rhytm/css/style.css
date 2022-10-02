@@ -711,6 +711,7 @@ border-color: rgba(18, 18, 18, 0.4);
     max-width: 800px;
     padding: 30px;
     position: relative;
+    border-radius: 20px;
 }
 .popup__close {
     position: absolute;
