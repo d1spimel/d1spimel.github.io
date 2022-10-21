@@ -10,7 +10,8 @@ body{
   margin-right: auto;
   height: 185px;
   font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
 }
 img{
 	transition: all 0.3s;
