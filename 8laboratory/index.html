@@ -11,6 +11,9 @@
   <body>
     <div class="wrapper">
       <div class="section__main">
+				<div class="image">
+					<img id="user_img" src="user.png" alt="User">
+				</div>
         <div class="score__block">
           <div class="name__player">
             <p id="name">Player</p>
@@ -19,27 +22,62 @@
             <p id="score_player">0</p>
           </div>
         </div>
-        <div class="ball">
-          <p id="ball_player">&nbsp;</p>
+        <div class="dice">
+					<div class="dice_image">
+          	<img id="dice_player" src="6.png" alt="Dice">
+					</div>
         </div>
       </div>
       <div class="section__generate">
         <div class="generate">
-          <a id="generate" href="#" onclick="generate();">Generate</a>
+          <a id="generate" href="#" onmousedown="generate();">Generate</a>
         </div>
       </div>
       <div class="section__main">
+				<div class="image">
+					<img id="computer_img" src="computer.png" alt="Computer">
+				</div>
         <div class="score__block">
           <div class="name__player">Computer</div>
           <div class="score">
             <p id="score_computer">0</p>
           </div>
         </div>
-        <div class="ball">
-          <p id="ball_computer">&nbsp;</p>
+        <div class="dice">
+					<div class="dice_image">
+          	<img id="dice_computer" src="6.png" alt="Dice">
+					</div>
         </div>
       </div>
     </div>
+		<div id="popup_registration" class="popup_registration">
+			<a href="#" class="popup_registration__area" id="popup_registration__area"></a>
+			<div class="popup_registration__body">
+				<div class="popup_registration__content">
+					<a href="#" class="popup__close" id="registration_close">X</a>
+					<div class="popup_registration__img">
+						<img id="popup_registration_img" src="user.png" alt="User">
+					</div>
+					<div id="popup_registration_text" class="popup_registration__text">Enter your name:</div>
+					<div class="popup__input">
+						<input id="registration_name" type="text"></input>
+					</div>
+					<a href="#" class="popup__okey" id="registration_close_button">Okey</a>
+				</div>
+			</div>
+		</div>
+		<div id="popup" class="popup">
+			<a href="#" class="popup__area"></a>
+			<div class="popup__body">
+				<div class="popup__content">
+					<a href="#" class="popup__close">X</a>
+					<div class="popup__img">
+						<img id="popup_img" src="user.png" alt="User">
+					</div>
+					<div id="popup_text" class="popup__text">Alexander, you win!</div>
+				</div>
+			</div>
+		</div>
     <script src="script.js"></script>
   </body>
 </html>
