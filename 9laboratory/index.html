@@ -1,85 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="reset.css" rel="stylesheet">
 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="reset.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="wrapper">
-        <div class="section__main">
-            <div class="score__block">
-								<div class="avatar__block">
-									<img src="user.png" alt="User" class="avatar">
-								</div>
-                <div class="name">
-                    <p id="username">Player</p>
-                </div>
-                <div class="score">
-                    <p id="score_player">0</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class = "card_image" id="card_player" src="img/0.png">
-            </div>
-        </div>
-        <div class="section__center">
-            <div class="attempts__section">
-                <p id="attempts">Attempt 0 of 3</p>
-            </div>
-            <div class="section__generate">
-                <div class="generate">
-                    <a id="generate" href="#" onclick="generate();">Generate</a>
-                </div>
-            </div>
-        </div>
-        <div class="section__main" id="computer_block">
-            <div class="score__block">
-							<div class="avatar__block">
-								<img src="computer.png" alt="User" class="avatar">
-							</div>
-							<div class="name">Computer</div>
-							<div class="score">
-									<p id="score_computer">0</p>
-							</div>
-            </div>
-            <div class="card">
-                <img class = "card_image" id="card_computer" src="img/0.png">
-            </div>
-        </div>
-    </div>
-		<div id="popup_registration" class="popup_registration">
-			<a href="#" class="popup_registration__area" id="popup_registration__area"></a>
-			<div class="popup_registration__body">
-				<div class="popup_registration__content">
-					<a href="#" class="popup__close" id="registration_close">X</a>
-					<div class="popup_registration__img">
-						<img id="popup_registration_img" src="user.png" alt="User">
-					</div>
-					<div id="popup_registration_text" class="popup_registration__text">Enter your name:</div>
-					<div class="popup__input">
-						<input id="registration_name" type="text"></input>
-					</div>
-					<a href="#" class="popup__okey" id="registration_close_button">Okey</a>
+	<div class="wrapper">
+		<div class="section__main">
+			<div class="score__block">
+				<div class="avatar__block">
+					<img id="user_avatar" src="user.png" alt="User" class="avatar">
+				</div>
+				<div class="name">
+					<p id="username">Player</p>
+				</div>
+				<div class="score">
+					<p id="score_player">0</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card_image" id="card_player" src="img/0.png">
+			</div>
+		</div>
+		<div class="section__center">
+			<div class="attempts__section">
+				<p id="attempts">Attempt 0 of 3</p>
+			</div>
+			<div class="section__generate">
+				<div class="generate">
+					<a id="generate" href="#" onclick="generate();">Generate</a>
 				</div>
 			</div>
 		</div>
-		<div id="popup" class="popup">
-			<a href="#" class="popup__area"></a>
-			<div class="popup__body">
-				<div class="popup__content">
-					<a href="#" class="popup__close">X</a>
-					<div class="popup__img">
-						<img id="popup_img" src="user.png" alt="User">
-					</div>
-					<div id="popup_text" class="popup__text"></div>
+		<div class="section__main" id="computer_block">
+			<div class="score__block">
+				<div class="avatar__block">
+					<img id="computer_avatar" src="computer.png" alt="User" class="avatar">
+				</div>
+				<div class="name">Computer</div>
+				<div class="score">
+					<p id="score_computer">0</p>
 				</div>
 			</div>
+			<div class="card">
+				<img class="card_image" id="card_computer" src="img/0.png">
+			</div>
 		</div>
-    <script src="script.js"></script>
+	</div>
+	<div id="popup_registration" class="popup_registration">
+		<a href="#" class="popup_registration__area" id="popup_registration__area"></a>
+		<div class="popup_registration__body">
+			<div class="popup_registration__content">
+				<a href="#" class="popup__close" id="registration_close">X</a>
+				<div class="popup_registration__img">
+					<img id="popup_registration_img" src="user.png" alt="User">
+				</div>
+				<div id="popup_registration_text" class="popup_registration__text">Enter your name:</div>
+				<div class="popup__input">
+					<input id="registration_name" type="text"></input>
+				</div>
+				<a href="#" class="popup__okey" id="registration_close_button">Okey</a>
+			</div>
+		</div>
+	</div>
+	<div id="popup" class="popup">
+		<a href="#" class="popup__area"></a>
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#" class="popup__close">X</a>
+				<div class="popup__img">
+					<img id="popup_img" src="user.png" alt="User">
+				</div>
+				<div id="popup_text" class="popup__text"></div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
 </body>
 </html>
