@@ -4,7 +4,8 @@ body {
   color: white;
 }
 .wrapper {
-  margin-top: 100px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   width: 400px;
   height: 500px;
   display: flex;
@@ -19,11 +20,12 @@ body {
 	height: 45px;
 }
 .username {
+  margin-top: 5px;
   font-size: 24px;
   white-space: nowrap;
 }
 .attempts {
-  margin-top: 10px;
+  margin-top: 7px;
 }
 .generate__container {
   text-align: center;
@@ -36,7 +38,7 @@ body {
 	height: 35px;
 	line-height: 35px;
 	border-radius: 45px;
-	margin-top: 20px;
+	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 11px;
