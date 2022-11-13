@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="card__block">
+			<div class="card__name">
+				<span>always</span>
+			</div>
+		</div>
+		<div class="slider__block">
+			<div class="left__arrow">
+				<a href="#">
+					<img src="img/left-arrow.png" alt="Arrow">
+				</a>
+			</div>
+			<div class="words">1/10</div>
+			<div class="right__arrow">
+				<a href="#">
+					<img src="img/right-arrow.png" alt="Arrow">
+				</a>
+			</div>
+		</div>
+		<div class="input__block">
+			<input type="text" class="input">
+			<a href="#" class="button">Okey</a>
+		</div>
+		<div class="stats__block">
+			<div class="stats__icon">
+				<img src="img/statistics.png" alt="Stats">
+				<span class="stats__title">Statistics</span>
+			</div>
+			<div class="answers__block">
+				<div class="right__block">
+					<div class="right__icon">
+						<img src="img/check.png" alt="Right">
+					</div>
+					<div class="right__counter"><span class="right">0</span></div>
+				</div>
+				<div class="error__block">
+					<div class="error__icon">
+						<img src="img/declined.png" alt="Error">
+					</div>
+					<div class="error__counter"><span class="error">0</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup" class="popup">
+		<a href="#" class="popup__area"></a>
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#" class="popup__close">X</a>
+				<div class="popup__img">
+					<img id="popup_img" src="user.png" alt="User">
+				</div>
+				<div id="popup_text" class="popup__text"></div>
+			</div>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
