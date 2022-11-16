@@ -67,6 +67,8 @@ function checker(){
 			error_icon.css("scale", "1");
 		}, 500);
 	}
+	input = $(".input");
+	input.val("");
 }
 
 let counter = $(".words");
