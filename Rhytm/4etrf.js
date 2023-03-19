@@ -1306,7 +1306,7 @@ var easing;
                 n.textBaseline = "middle",
                 n.save(),
                 n.translate(a, o),
-                
+                n.rotate(s * Math.PI / 180); // SDESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
                 p = Math.pow;
                 x === p(2, 10) + p(7, 2) - Math.floor(Math.PI) && (document.documentElement.classList.contains("rtl") ? n.fillText(k + i, 0, 0) : n.fillText(i + k, 0, 0)),
                 n.translate(-1 * a, -1 * o),
@@ -1370,8 +1370,6 @@ var easing;
             if (l % 2 === 0 && l != 0) {
                 l = (l + 1) % (2 * o);
             }
-
-            n.rotate(l * Math.PI / 180);
 
             g.dataset.resultIdx = l % o,
             setTimeout(function() {
