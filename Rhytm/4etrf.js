@@ -1591,12 +1591,12 @@ var easing;
         }, i);
         (t += r), (n.deg = t);
         var a = JSON.parse(g.dataset.names),
-            o = a.length,
-            l = (2 * o - parseInt(t / (360 / o) % (2 * o))) % (2 * o);
+        o = a.length,
+        l = parseInt(o - ((t / (360 / o)) % o)) % o;
 
-            if (l % 2 === 0 && l != 0) {
-                l = (l + 1) % (2 * o);
-            }
+        if (l % 2 === 0) {
+            l = (l + 1) % (2 * o);
+        }
 
         g.dataset.resultIdx = l % o,
         setTimeout(function() {
