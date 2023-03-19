@@ -1524,6 +1524,7 @@ var easing;
           (n.textBaseline = "middle"),
           n.save(),
           n.translate(a, o),
+          n.rotate((s * Math.PI) / 180);
         p = Math.pow;
         x === p(2, 10) + p(7, 2) - Math.floor(Math.PI) &&
           (document.documentElement.classList.contains("rtl")
