@@ -1589,17 +1589,26 @@ var easing;
         setTimeout(function () {
           u("tick");
         }, i);
-        (t += r), (n.deg = t);
-        console.log(n.deg);
+        (t += r);
         var a = JSON.parse(g.dataset.names),
         o = a.length,
         l = parseInt(o - ((t / (360 / o)) % o)) % o;
 
+        let part = 360 / o;
+        let winCircle = t % 360;
+
         if (l % 2 === 0 && l+1 < o) {
             l += 1;
+            t -= winCircle;
+            t += winCircle - part;
         } else if(l % 2 === 0 && l+1 >= o){
             l -= 1;
+            t -= winCircle;
+            t += winCircle + part;
         }
+        (n.deg = t)
+
+
 
         g.dataset.resultIdx = l,
         setTimeout(function() {
