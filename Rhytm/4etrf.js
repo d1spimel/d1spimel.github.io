@@ -1306,7 +1306,7 @@ var easing;
                 n.textBaseline = "middle",
                 n.save(),
                 n.translate(a, o),
-                n.rotate(s * Math.PI / 180);
+                
                 p = Math.pow;
                 x === p(2, 10) + p(7, 2) - Math.floor(Math.PI) && (document.documentElement.classList.contains("rtl") ? n.fillText(k + i, 0, 0) : n.fillText(i + k, 0, 0)),
                 n.translate(-1 * a, -1 * o),
@@ -1356,7 +1356,7 @@ var easing;
                 }
                 return f.push(d.pop()),
                 f
-            }(t, r += 360 * 0.1, (a = JSON.parse(g.dataset.names)).length, 1e3 * h); i = s.shift(); )
+            }(t, r += 360 / o * l + Math.random() * 360 / o, (a = JSON.parse(g.dataset.names)).length, 1e3 * h); i = s.shift(); )
                 setTimeout(function() {
                     u("tick")
                 }, i);
@@ -1367,9 +1367,12 @@ var easing;
             o = a.length,
             l = (2 * o - parseInt(t / (360 / o) % (2 * o))) % (2 * o);
 
-            if (l % 2 === 0) {
+            if (l % 2 === 0 && l != 0) {
                 l = (l + 1) % (2 * o);
             }
+
+            var n = g.getContext("2d");
+            n.rotate(l * Math.PI / 180);
 
             g.dataset.resultIdx = l % o,
             setTimeout(function() {
