@@ -1356,7 +1356,7 @@ var easing;
                 }
                 return f.push(d.pop()),
                 f
-            }(t, r += 360 * Math.random(), (a = JSON.parse(g.dataset.names)).length, 1e3 * h); i = s.shift(); )
+            }(t, r += 360 * 0.1, (a = JSON.parse(g.dataset.names)).length, 1e3 * h); i = s.shift(); )
                 setTimeout(function() {
                     u("tick")
                 }, i);
