@@ -1590,6 +1590,7 @@ var easing;
           u("tick");
         }, i);
         (t += r), (n.deg = t);
+        console.log(n.deg);
         var a = JSON.parse(g.dataset.names),
         o = a.length,
         l = parseInt(o - ((t / (360 / o)) % o)) % o;
