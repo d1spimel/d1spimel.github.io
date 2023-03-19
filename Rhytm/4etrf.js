@@ -1335,34 +1335,28 @@ var easing;
         n.is_moving = !0,
         n.is_spinned = !0,
         1070 === x)) {
-            for (var i, r = 360 * (c + parseInt(2 * Math.random())), s = function(e, n, t, i) {
-                var r = 360 / t - e % (360 / t),
-                    s = r / n,
-                    a = 360 / t,
-                    o = 360 / t / n,
-                    l = [];
+            for (var i, r = 360 * (c + parseInt(2 * Math.random())), s = function(e, t, n, i) {
+                var r = 360 / n - e % (360 / n)
+                  , s = r / t
+                  , a = 360 / n
+                  , o = 360 / n / t
+                  , l = [];
                 l.push(s);
-                t = parseInt((n - r) / a);
-                for (var c = 0; c < t; c++)
-                  l.push(s + o * (c + 1));
-                var h = bezierEasing(p[1], p[0], p[3], p[2]),
-                    u = [],
-                    d = [];
-                for (c = 0; c < l.length; c++)
-                  u.push(h(l[c]) * i - w);
-                d = u.filter(function(idx) {
-                  return idx % 2 !== 0;
-                }); // filter out even indices
+                n = parseInt((t - r) / a);
+                for (var c = 0; c < n; c++)
+                    l.push(s + o * (c + 1));
+                for (var h, u = bezierEasing(p[1], p[0], p[3], p[2]), d = []; h = l.shift(); )
+                    d.push(u(h) * i - w);
                 var f = [];
                 f[0] = d[0];
-                for (c = 1, n = d.length; c < n - 1; c++) {
-                  var m = f[f.length - 1];
-                  m > d[c] || (d[c] - m < 80 ? f.push(m + 80) : f.push(d[c]))
+                for (c = 1,
+                n = d.length; c < n - 1; c++) {
+                    var m = f[f.length - 1];
+                    m > d[c] || (d[c] - m < 80 ? f.push(m + 80) : f.push(d[c]))
                 }
                 return f.push(d.pop()),
                 f
-              }
-              (t, r += 360 * Math.random(), (a = JSON.parse(g.dataset.names)).length, 1e3 * h); i = s.shift(); )
+            }(t, r += 360 * Math.random(), (a = JSON.parse(g.dataset.names)).length, 1e3 * h); i = s.shift(); )
                 setTimeout(function() {
                     u("tick")
                 }, i);
@@ -1372,7 +1366,7 @@ var easing;
             var a = JSON.parse(g.dataset.names),
             o = a.length,
             l = (parseInt(o - t / (360 / o) % o) % o * 2) + 1;
-
+            
             g.dataset.resultIdx = l,
             setTimeout(function() {
                 u("bell");
