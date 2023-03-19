@@ -1371,7 +1371,6 @@ var easing;
                 l = (l + 1) % (2 * o);
             }
 
-            var n = g.getContext("2d");
             n.rotate(l * Math.PI / 180);
 
             g.dataset.resultIdx = l % o,
