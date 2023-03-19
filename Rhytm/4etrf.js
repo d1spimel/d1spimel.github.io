@@ -1524,7 +1524,6 @@ var easing;
           (n.textBaseline = "middle"),
           n.save(),
           n.translate(a, o),
-          n.rotate((s * Math.PI) / 180);
         p = Math.pow;
         x === p(2, 10) + p(7, 2) - Math.floor(Math.PI) &&
           (document.documentElement.classList.contains("rtl")
@@ -1594,7 +1593,7 @@ var easing;
         o = a.length,
         l = parseInt(o - ((t / (360 / o)) % o)) % o;
 
-        if (l % 2 === 0 && l+1 <= o) {
+        if (l % 2 === 0 && l+1 < o) {
             l += 1;
         } else if(l % 2 === 0 && l+1 >= o){
             l -= 1;
