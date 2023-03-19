@@ -1594,11 +1594,13 @@ var easing;
         o = a.length,
         l = parseInt(o - ((t / (360 / o)) % o)) % o;
 
-        if (l % 2 === 0) {
-            l = (l + 1) % (2 * o);
+        if (l % 2 === 0 && l+1 <= o) {
+            l += 1;
+        } else if(l % 2 === 0 && l+1 >= o){
+            l -= 1;
         }
 
-        g.dataset.resultIdx = l % o,
+        g.dataset.resultIdx = l,
         setTimeout(function() {
             u("bell");
             var e = JSON.parse(g.dataset.colors),
