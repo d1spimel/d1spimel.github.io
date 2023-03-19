@@ -1362,19 +1362,24 @@ var easing;
                 }, i);
             t += r,
             n.deg = t;
-            
+
             var a = JSON.parse(g.dataset.names),
             o = a.length,
-            l = (parseInt(o - t / (360 / o) % o) % o * 2) + 1;
-            
-            g.dataset.resultIdx = l,
+            l = (2 * o - parseInt(t / (360 / o) % (2 * o))) % (2 * o);
+
+            if (l % 2 === 0) {
+                l = (l + 1) % (2 * o);
+            }
+
+            g.dataset.resultIdx = l % o,
             setTimeout(function() {
                 u("bell");
-                var e = JSON.parse(g.dataset.colors)
-                  , t = JSON.parse(g.dataset.resultIdx);
+                var e = JSON.parse(g.dataset.colors),
+                    t = JSON.parse(g.dataset.resultIdx);
                 d.call(n, a[t], e[t]),
                 n.is_moving = !1
             }, 1e3 * h)
+
         }
     }
     var d = function(e, t) {
