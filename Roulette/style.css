@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(#be93c5,#7bc6cc);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
